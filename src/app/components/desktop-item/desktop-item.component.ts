@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
+import { MessageService } from "src/app/services/message.service";
 
 @Component({
-  selector: 'app-desktop-item',
-  templateUrl: './desktop-item.component.html',
-  styleUrls: ['./desktop-item.component.scss']
+  selector: "desktop-item",
+  templateUrl: "./desktop-item.component.html",
+  styleUrls: ["./desktop-item.component.scss"]
 })
 export class DesktopItemComponent implements OnInit {
+  @Input() id: string;
+  @Input() icon: string;
+  @Input() title: string;
+  @Input() message: string;
+  @Input() options: any;
 
-  constructor() { }
+  constructor(private messageService: MessageService) {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  onDblDesktopItem(message) {
+    this.messageService.detectMessage(message);
   }
-
 }

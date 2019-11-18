@@ -1,3 +1,12 @@
-<p>
-  desktop-item works!
-</p>
+<div
+  class="desktop-item"
+  [ngStyle]="options"
+  (touchend)="onDblDesktopItem(message)"
+>
+  <div class="icon-section" (dblclick)="onDblDesktopItem(message)">
+    <img class="icon-image" [src]="icon" />
+  </div>
+  <div class="title-section" (dblclick)="onDblDesktopItem(message)">
+    <p class="title-text">{{ title }}</p>
+  </div>
+</div>
