@@ -1,0 +1,197 @@
+$break-small: 768px;
+a {
+  color: white;
+  line-height: 0;
+}
+
+.logo-section {
+  margin-right: 25px;
+  @media screen and (max-width: $break-small) {
+    margin-right: auto;
+  }
+  .logo-text {
+    font-family: "SpaceMono-Bold";
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+
+#menubar {
+  height: 40px;
+  background: black;
+  display: flex;
+  font-size: 14px;
+  color: white;
+  align-items: center;
+  padding: 0 25px;
+  z-index: 9999 !important;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  @media screen and (max-width: $break-small) {
+    padding: 0 16px;
+  }
+  .menu-section {
+    margin-right: auto;
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
+    .menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      .menu-item {
+        display: inline;
+        margin: 0 15px;
+        padding-bottom: 10px;
+        position: relative;
+        .menu-item-link {
+          cursor: pointer;
+        }
+        .sub-menu {
+          display: none;
+          position: absolute;
+          background-color: white;
+          z-index: 1;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          border: 2px solid black;
+          top: 28px;
+          left: -15px;
+          width: max-content;
+          padding-bottom: 3px;
+          .sub-menu-item {
+            margin: 3px 3px 0;
+            cursor: pointer;
+            .sub-menu-item-link {
+              color: black;
+              line-height: 30px;
+              display: block;
+              padding: 0 10px;
+            }
+            &:hover {
+              background: black;
+              .sub-menu-item-link {
+                color: white;
+              }
+            }
+          }
+          .separator {
+            background: black;
+            height: 2px;
+            margin: 0 -3px;
+          }
+        }
+      }
+
+      .menu-item-hover {
+        .sub-menu {
+          display: block;
+        }
+      }
+    }
+  }
+  .time-section {
+    display: flex;
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
+    .today {
+      margin-right: 30px;
+    }
+    .current-time {
+      right: 0;
+      .time-blinker {
+        animation-name: flash;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-timing-function: steps(1, end);
+      }
+      @keyframes flash {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .show-mobile-menu {
+    display: none;
+    @media screen and (max-width: $break-small) {
+      display: flex;
+    }
+    .show-mobile-menu-icon {
+      font-size: 19px;
+      cursor: pointer;
+    }
+  }
+}
+
+#mobile-menu {
+  height: 100%;
+  min-height: 400px;
+  width: 0;
+  box-sizing: border-box;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .hide-mobile-menu {
+      .hide-mobile-menu-icon {
+        font-size: 35px;
+        display: flex;
+        cursor: pointer;
+      }
+    }
+  }
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .menu-item {
+      line-height: unset;
+      font-size: 22px;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+  }
+  .menu-bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    .menu-bottom-text {
+      font-size: 16px;
+      display: flex;
+      .copyright {
+        font-size: 24px;
+        line-height: 32px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.mobile-menu {
+  width: 100% !important;
+  padding: 8px 16px !important;
+}

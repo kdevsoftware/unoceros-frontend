@@ -1,3 +1,76 @@
-<p>
-  menubar works!
-</p>
+<div id="menubar">
+  <div class="logo-section">
+    <a class="logo-text" href="/">unoceros</a>
+  </div>
+
+  <div class="menu-section">
+    <ul class="menu">
+      <li
+        *ngFor="let menuItem of menuItems; let i = index"
+        class="menu-item"
+        [class.menu-item-hover]="activeMenuId == i"
+        (mouseover)="showSubMenu(i)"
+        (mouseleave)="showSubMenu(-1)"
+      >
+        <a class="menu-item-link">{{ menuItem.title }}</a>
+        <ul *ngIf="menuItem.type == 'group'" class="sub-menu">
+          <li
+            *ngFor="let subMenuItem of menuItem.children"
+            class="sub-menu-item"
+          >
+            <a
+              *ngIf="subMenuItem.type == 'item'"
+              class="sub-menu-item-link"
+              (click)="onMenuItem(subMenuItem.message)"
+              name="{{ subMenuItem.id }}"
+            >
+              {{ subMenuItem.title }}</a
+            >
+            <div
+              *ngIf="subMenuItem.type == 'separator'"
+              class="separator"
+            ></div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="time-section">
+    <div class="today">{{ today }}</div>
+    <div class="current-time">
+      {{ currentHour }}<span class="time-blinker">:</span>{{ currentMinute }}
+      {{ currentMoment }}
+    </div>
+  </div>
+
+  <div class="show-mobile-menu">
+    <a class="show-mobile-menu-icon" (click)="showMenu()">&#9776;</a>
+  </div>
+</div>
+
+<div id="mobile-menu" [class.mobile-menu]="mobileMenu">
+  <div class="menu-top">
+    <div class="logo-section">
+      <a class="logo-text" href="/">unoceros</a>
+    </div>
+    <div class="hide-mobile-menu">
+      <a class="hide-mobile-menu-icon" (click)="hideMenu()">&times;</a>
+    </div>
+  </div>
+
+  <div class="menu-items">
+    <a
+      *ngFor="let mobileMenuItem of mobleMenuItems"
+      class="menu-item"
+      (click)="onMenuItem(mobileMenuItem.message)"
+      >{{ mobileMenuItem.title }}</a
+    >
+  </div>
+
+  <div class="menu-bottom">
+    <h5 class="menu-bottom-text">
+      <span class="copyright">&copy;</span> 2018 Unoceros
+    </h5>
+  </div>
+</div>
