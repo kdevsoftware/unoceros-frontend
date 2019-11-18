@@ -88,13 +88,13 @@ $header-buttons-between: 17px;
     .jqx-window-close-button-background {
       right: $header-buttons-right !important;
       .jqx-window-close-button {
-        background-image: url(/assets/image/icons/btn-close.svg) !important;
+        background-image: url(assets/image/icons/btn-close.svg) !important;
       }
     }
     .jqx-window-maximum-button-background {
       right: ($header-buttons-right + $header-button-size + $header-buttons-between) !important;
       .jqx-window-maximum-button {
-        background-image: url(/assets/image/icons/btn-maximum.svg) !important;
+        background-image: url(assets/image/icons/btn-maximum.svg) !important;
       }
     }
   }
