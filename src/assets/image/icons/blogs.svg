@@ -1,0 +1,13 @@
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="1920x1024" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Change-Background" transform="translate(-63.000000, -90.000000)" fill-rule="nonzero">
+            <g id="Icon" transform="translate(63.000000, 90.000000)">
+                <rect id="Rectangle" stroke="#000000" stroke-width="1.70000005" fill="#000000" x="0.850000024" y="0.850000024" width="58.3" height="58.3"></rect>
+                <path d="M19.7214285,36.0071428 L19.7214285,0.850000024 L0.850000024,0.850000024 L0.850000024,59.15 L14.5785714,59.15 L14.5785714,36.0071428 L19.7214285,36.0071428 Z" id="Combined-Shape" stroke="#000000" stroke-width="1.70000005" fill="#F5F5F5"></path>
+                <rect id="Rectangle-3" stroke="#000000" stroke-width="0.850000024" fill="#000000" x="8.13928573" y="49.2821429" width="6.86428569" height="1.72142855"></rect>
+                <polygon id="Rectangle-48" fill="#F5F5F5" points="24.8571429 8.57142857 54.8571429 8.57142857 54.8571429 51.4285714 24.8571429 51.4285714 18.8571429 51.4285714 24.8571429 47.1428571"></polygon>
+                <rect id="Rectangle-49" fill="#000000" x="7.71428571" y="7.71428571" width="2.57142857" height="6"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
