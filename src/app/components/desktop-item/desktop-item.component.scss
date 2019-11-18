@@ -1,0 +1,35 @@
+.desktop-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 105px;
+  align-items: center;
+  justify-content: flex-end;
+
+  .icon-section {
+    cursor: pointer;
+    .icon-image {
+      margin: auto;
+    }
+  }
+  .title-section {
+    background: #f5f5f5;
+    margin-top: 4px;
+    padding: 1px 10px 2px;
+    min-width: 86px;
+    box-sizing: border-box;
+    word-break: break-all;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    .title-text {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+}
+
+.trash-item {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
