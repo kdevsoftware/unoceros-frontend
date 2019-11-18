@@ -1,24 +1,28 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { HttpClientModule } from "@angular/common/http";
+import { InMemoryWebApiModule } from "angular-in-memory-web-api";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { DesktopComponent } from './components/desktop/desktop.component';
-import { DesktopItemComponent } from './components/desktop-item/desktop-item.component';
-import { MenubarComponent } from './components/menubar/menubar.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { ComponentsModule } from "./components/components.module";
+
+import { jqxWindowComponent } from "jqwidgets-scripts/jqwidgets-ts/angular_jqxwindow";
+import { AppComponent } from "./app.component";
+import { FakeDbService } from "./fake-db/fake-db.service";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DesktopComponent,
-    DesktopItemComponent,
-    MenubarComponent
-  ],
+  declarations: [AppComponent, jqxWindowComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentsModule,
+    HttpClientModule,
+    InMemoryWebApiModule.forRoot(FakeDbService, {
+      delay: 0,
+      passThruUnknownUrl: true
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
