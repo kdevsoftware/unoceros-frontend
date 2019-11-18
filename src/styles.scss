@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~jqwidgets-scripts/jqwidgets/styles/jqx.base.css";
+@import "./assets/style/u-window.scss";
+
+@font-face {
+  font-family: "SpaceMono-Regular";
+  src: url("assets/font/spacemono/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SpaceMono-Bold";
+  src: url("assets/font/spacemono/SpaceMono-Bold.ttf");
+}
+
+@font-face {
+  font-family: "SpaceMono-Italic";
+  src: url("assets/font/spacemono/SpaceMono-Italic.ttf");
+}
+
+@font-face {
+  font-family: "SpaceMono-BoldItalic";
+  src: url("assets/font/spacemono/SpaceMono-BoldItalic.ttf");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+
+* {
+  font-family: "SpaceMono-Regular";
+}
