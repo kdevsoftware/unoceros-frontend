@@ -1,3 +1,14 @@
-<p>
-  desktop works!
-</p>
+<div id="desktop" (window:resize)="onResize($event)">
+  <div class="desktop-item-list">
+    <div *ngFor="let desktopItem of desktopItems; let i = index">
+      <desktop-item
+        [id]="desktopItem.id"
+        [icon]="desktopItem.icon"
+        [title]="desktopItem.title"
+        [message]="desktopItem.message"
+        [options]="getOptions(i, desktopItems)"
+      >
+      </desktop-item>
+    </div>
+  </div>
+</div>
