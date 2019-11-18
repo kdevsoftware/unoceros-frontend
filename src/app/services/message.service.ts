@@ -40,8 +40,8 @@ export class MessageService {
       }
 
       case "contact-us": {
-        const to = "contact@unoceros.com";
-        const sub = "Hello, Unoceros team.";
+        const to = "kdev.software1110@gmail.com";
+        const sub = "hi, kdevsoftware.";
         document.location.href =
           "mailto:" + to + "?subject=" + encodeURIComponent(sub);
 
