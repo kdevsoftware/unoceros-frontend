@@ -20,25 +20,25 @@ export const uWindows = [
     items: [
       {
         id: "the-coming-regulatory-tidal-wave",
-        image: "/assets/image/banners/blog01.jpg",
+        image: "assets/image/banners/blog01.jpg",
         title: "The Comning Regulatory Tidal Wave.txt",
         message: "the-coming-regulatory-tidal-wave"
       },
       {
         id: "a-new-worker-economy-where-you-dont-have-to-work",
-        image: "/assets/image/banners/blog02.jpg",
+        image: "assets/image/banners/blog02.jpg",
         title: 'A New "Worker" Economy Where You Don\'t Have to Work.txt',
         message: "a-new-worker-economy-where-you-dont-have-to-work"
       },
       {
         id: "when-the-user-becomes-the-product",
-        image: "/assets/image/banners/blog03.jpg",
+        image: "assets/image/banners/blog03.jpg",
         title: "When the user becomes the product.txt",
         message: "when-the-user-becomes-the-product"
       },
       {
         id: "unoceros-guiding-principles",
-        image: "/assets/image/banners/blog04.jpg",
+        image: "assets/image/banners/blog04.jpg",
         title: "Unoceros Guiding Principles.txt",
         message: "unoceros-guiding-principles"
       }
@@ -52,13 +52,13 @@ export const uWindows = [
     items: [
       {
         id: "about",
-        icon: "/assets/image/icons/file.svg",
+        icon: "assets/image/icons/file.svg",
         title: "About",
         message: "about"
       },
       {
         id: "principles",
-        icon: "/assets/image/icons/file.svg",
+        icon: "assets/image/icons/file.svg",
         title: "Priciples",
         message: "principles"
       }
@@ -72,7 +72,7 @@ export const uWindows = [
     items: [
       {
         id: "concepts",
-        icon: "/assets/image/icons/file.svg",
+        icon: "assets/image/icons/file.svg",
         title: "Concepts",
         message: "concepts"
       }
@@ -86,7 +86,7 @@ export const uWindows = [
     items: [
       {
         id: "trust-technologies",
-        icon: "/assets/image/icons/file.svg",
+        icon: "assets/image/icons/file.svg",
         title: "Trust Technologies",
         message: "trust-technologies"
       }
@@ -100,13 +100,13 @@ export const uWindows = [
     items: [
       {
         id: "about",
-        icon: "/assets/image/icons/file.svg",
+        icon: "assets/image/icons/file.svg",
         title: "About",
         message: "about"
       },
       {
         id: "principles",
-        icon: "/assets/image/icons/file.svg",
+        icon: "assets/image/icons/file.svg",
         title: "Priciples",
         message: "principles"
       }
@@ -150,7 +150,7 @@ export const uWindows = [
       },
       {
         id: "invisible",
-        background: "url(/assets/image/banners/bg02.jpg) center / cover",
+        background: "url(assets/image/banners/bg02.jpg) center / cover",
         title: "Invisible"
       },
       {
@@ -184,7 +184,7 @@ export const uWindows = [
             <div class="content-frame">
                 <div class="content-container">
                     <div class="document-container">
-                        <img class="banner" src="/assets/image/banners/blog01.jpg">
+                        <img class="banner" src="assets/image/banners/blog01.jpg">
                         <h3 class="title">The Coming Regulatory Tidal Wave</h3>
                         <p>The writing is on the wall. With the recent passage of the GDPR by the EU (addressed in another article), regulation around the collection, usage, and value of personal data is clearly here and it’s only just beginning. Let’s take a close look at a recent piece of legislation that is guaranteed to have a lasting impact on how the regulatory landscape develops in the United States.</p>
                         <p>The state of California recently passed the <a href="#">California Consumer Privacy Act of 2018 (CCPA). The CCPA</a>, largely understood to be a political response to the rash of high profile data breaches in the years preceding, grants new rights to consumers with respect to their personal information. This law, which will go into effect in 2020, imposes serious responsibilities and liabilities on businesses who engage in commercial activities with residents of California.</p>      
@@ -207,7 +207,7 @@ export const uWindows = [
             <div class="content-frame">
                 <div class="content-container">
                     <div class="document-container">
-                        <img class="banner" src="/assets/image/banners/blog02.jpg">
+                        <img class="banner" src="assets/image/banners/blog02.jpg">
                         <h3 class="title">A New Worker Economy Where You Don't Have to Work</h3>
                         <p>The writing is on the wall. With the recent passage of the GDPR by the EU (addressed in another article), regulation around the collection, usage, and value of personal data is clearly here and it’s only just beginning. Let’s take a close look at a recent piece of legislation that is guaranteed to have a lasting impact on how the regulatory landscape develops in the United States.</p>
                         <p>The state of California recently passed the <a href="#">California Consumer Privacy Act of 2018 (CCPA). The CCPA</a>, largely understood to be a political response to the rash of high profile data breaches in the years preceding, grants new rights to consumers with respect to their personal information. This law, which will go into effect in 2020, imposes serious responsibilities and liabilities on businesses who engage in commercial activities with residents of California.</p>      
@@ -230,7 +230,7 @@ export const uWindows = [
             <div class="content-frame">
                 <div class="content-container">
                     <div class="document-container">
-                        <img class="banner" src="/assets/image/banners/blog03.jpg">
+                        <img class="banner" src="assets/image/banners/blog03.jpg">
                         <h3 class="title">When the use becomes the product</h3>
                         <p>The writing is on the wall. With the recent passage of the GDPR by the EU (addressed in another article), regulation around the collection, usage, and value of personal data is clearly here and it’s only just beginning. Let’s take a close look at a recent piece of legislation that is guaranteed to have a lasting impact on how the regulatory landscape develops in the United States.</p>
                         <p>The state of California recently passed the <a href="#">California Consumer Privacy Act of 2018 (CCPA). The CCPA</a>, largely understood to be a political response to the rash of high profile data breaches in the years preceding, grants new rights to consumers with respect to their personal information. This law, which will go into effect in 2020, imposes serious responsibilities and liabilities on businesses who engage in commercial activities with residents of California.</p>      
@@ -253,7 +253,7 @@ export const uWindows = [
             <div class="content-frame">
                 <div class="content-container">
                     <div class="document-container">
-                        <img class="banner" src="/assets/image/banners/blog04.jpg">
+                        <img class="banner" src="assets/image/banners/blog04.jpg">
                         <h3 class="title">Unoceros Guiding Principles</h3>
                         <p>The writing is on the wall. With the recent passage of the GDPR by the EU (addressed in another article), regulation around the collection, usage, and value of personal data is clearly here and it’s only just beginning. Let’s take a close look at a recent piece of legislation that is guaranteed to have a lasting impact on how the regulatory landscape develops in the United States.</p>
                         <p>The state of California recently passed the <a href="#">California Consumer Privacy Act of 2018 (CCPA). The CCPA</a>, largely understood to be a political response to the rash of high profile data breaches in the years preceding, grants new rights to consumers with respect to their personal information. This law, which will go into effect in 2020, imposes serious responsibilities and liabilities on businesses who engage in commercial activities with residents of California.</p>      
